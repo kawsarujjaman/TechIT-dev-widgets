@@ -1,0 +1,44 @@
+/**
+custom sidebar CSS
+*/
+
+#tid-main-content-sidebar{
+    display: flex;
+}
+#tid-shop-sidebar, #tid-page-sidebar {
+    float: left;
+}
+
+.woocommerce-page .site-main {
+    display: flex;
+}
+.tid-main-content{
+    width: 75%;
+}
+.tid-sidebar{
+    width: 23%;
+    margin-right: 20px;
+}
+/* Style the sidebars */
+#main-sidebar, #blog-sidebar {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    #main-sidebar, #blog-sidebar {
+        width: 100%;
+        margin-right: 0;
+    }
+    .woocommerce-page .site-main {
+        display: block;
+    }
+    .tid-main-content{
+        width: 100%;
+    }
+    .tid-sidebar{
+        display: none;
+    }
+}
